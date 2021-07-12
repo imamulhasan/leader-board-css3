@@ -1,0 +1,166 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*-------------------------------------
+      common style and utilities
+ --------------------------------------*/
+
+
+body{
+    font-family: 'Poppins', sans-serif;  
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container{
+    background-color: #FFFFFF ;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+/*-----------------------------------------------
+               top players style
+ ----------------------------------------------- */
+
+
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color:#562EFF ;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-text{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom:14px;
+}
+
+/*------------------------------------------
+             top blog styles
+ ------------------------------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+
+ .blog{
+    display: flex;
+}
+
+ .blog .thumbnil img{
+    width: 164px;
+ }
+ .blog-info{
+     margin-left: 16px;
+ }
+ .blog-author{
+     color: #9F9F9F;
+     font-size: 16px;
+ }
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/*----------------------
+    course style
+-------------------------  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course{
+    width: 250px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 12px;
+}
+.empty{
+    color:  #AEAEAE;
+}
+.clock{
+    text-align: center;
+    width: 95px;
+   background-color: #FFE4E8;
+   border-radius: 15px;
+}
+.fa-clock{
+    font-size: 90%;
+    color: #FF4A60;
+    
+}
+.clock span{
+    color: 
+    #FF4A60;
+}
+
+/*--------------------------------
+          midea quary 
+ ---------------------------------*/
+
+ @media only screen and (max-width:688px) {
+     .container{
+         width: 100%;
+     }
+     .players{
+         
+         grid-template-columns: repeat(1,1fr);
+     
+     }
+     
+     .player{
+        flex-direction: column;
+     }
+     .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .course{
+        display: block;
+        margin: auto;
+           
+    }
+}
